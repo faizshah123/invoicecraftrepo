@@ -19,6 +19,14 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link rel="stylesheet" href="styles.css">
   
+  <!-- Google Analytics (no ads) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-NN0K0B9563"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-NN0K0B9563', { anonymize_ip: true });
+  </script>
 </head>
 <body class="theme-dark">
   <header class="app-header no-print">
@@ -62,6 +70,7 @@
       <h2>4. Cookies and local storage</h2>
       <ul>
         <li><strong>Necessary:</strong> local storage keys for saved invoices and a simple cookie-notice acknowledgement.</li>
+        <li><strong>Analytics:</strong> Google Analytics 4 may record page views, approximate location, device type, and how you arrived at the site. Invoice contents are not sent to Google Analytics. You can opt out with browser add-ons such as Google Analytics Opt-out.</li>
         <li><strong>Advertising (if enabled):</strong> Google AdSense or similar partners may set cookies to measure ads and, where allowed, personalize them. You can opt out of personalized Google ads at <a href="https://www.google.com/settings/ads" rel="noopener" target="_blank">Google Ads Settings</a> or visit <a href="https://www.aboutads.info" rel="noopener" target="_blank">aboutads.info</a>.</li>
       </ul>
       <p>We do not currently run pop-up, autoplay, or third-party ad networks other than any Google-served ads you may see after an approved AdSense account is connected.</p>
@@ -100,7 +109,7 @@
     </div>
   </footer>
   <div id="cookie-banner" class="cookie-banner hidden no-print" role="dialog" aria-label="Cookie notice">
-    <p>This site stores invoice drafts in your browser only. If advertising is enabled later, third-party cookies may be used. See the <a href="/privacy-policy">Privacy Policy</a>.</p>
+    <p>This site stores invoice drafts in your browser. Google Analytics may measure visits. If advertising is enabled later, third-party cookies may be used. See the <a href="/privacy-policy">Privacy Policy</a>.</p>
     <button type="button" id="cookie-accept" class="btn btn-primary">OK</button>
   </div>
   <script src="app.js"></script>
